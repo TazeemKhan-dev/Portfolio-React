@@ -36,7 +36,9 @@ import spotify from "../assets/spotify.png";
 import react_2 from "../assets/react_2.png";
 import logo_1 from '../assets/logo_1.png';
 import logo_2 from '../assets/logo_2.png'
+import tailwind from '../assets/tailwind.png'
 export default {
+  tailwind,
   logo_2,
   logo_1,
   react_2,
