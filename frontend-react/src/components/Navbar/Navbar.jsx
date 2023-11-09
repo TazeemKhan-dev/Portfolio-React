@@ -1,10 +1,10 @@
-import { useState ,React} from 'react'
+import { useState } from 'react'
 import './Navbar.scss'
 import {HiMenuAlt4, HiX} from 'react-icons/hi'
 import {motion} from 'framer-motion'
 import {images} from '../../constants'
 const Navbar = () => {
-    const nav=['home','about','work','skills','contact'];
+    const nav=['home','about','work','skills','contact','resume'];
     const [toggle, setToggle] = useState(false)
   return (
     <nav className='app__navbar'>
