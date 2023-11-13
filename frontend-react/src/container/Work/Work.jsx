@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
@@ -12,7 +12,7 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-
+  console.log(filterWork);
   useEffect(() => {
     const query = '*[_type == "works"]';
 
@@ -44,7 +44,7 @@ const Work = () => {
       </h2>
 
       <div className="app__work-filter">
-        {[ "All","React JS",'JavaScript','Tailwind/MUI'].map(
+        {["All", "React JS", "JavaScript", "Tailwind/MUI"].map(
           (item, index) => (
             <div
               key={index}
